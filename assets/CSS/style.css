@@ -6,40 +6,55 @@
     margin: 0;
 }
 
-.borda {
-    border: red 2px solid;
-}
-
-.img_story:hover {
-    box-shadow:  0 0 0 2px rgba(0, 0, 0, 0.08) ;
+.font {
+    /* fonte para id do perfil */
+    font-family: Montserrat, sans serif;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
 }
 
 .forma {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-    /* margin-left: 30px; */
+
 }
 
-.font {
-    /* fonte para id do perfil */
-    font-family: Montserrat, sans serif;
-    font-size: 14px;
-    font-weight: 500;
-    font-style: normal;
-    color: black;
+
+.row {
+    display:flex;
+    flex-direction: row; 
 }
 
-.contanier {
+.column { 
     display: flex;
-    flex-direction: row;
-    /* border:  red 2px solid; */
+    flex-direction: column;
+}
+.clicar {
+    cursor: pointer; 
+}
+
+.borda {
+    border: red 2px solid;
+}
+
+/* Configuração final  */
+
+/* header  */
+
+.img_story:hover {
+    box-shadow:  0 0 0 2px rgba(0, 0, 0, 0.08) ;
+}
+
+.container  {
     justify-content: space-between;
     background-color: white;
     align-items: center;
     width: auto;
+    height: 65px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-
 }
 
 .nav {
@@ -47,24 +62,19 @@
 }
 
 .logo {
-
-    width :131px;
-    height: 73px;
-    /* border:  red 2px solid; */
-    /* padding: 5px; */
+    max-width :110px;
+     max-height: 61px;
     margin-left: 130px;
-    
 }
 
 form {
-    display: flex;
     justify-content: center;
-    /* border:  red 2px solid; */
-
+ 
 }
+
 input {
-        width: 220px;
-        height: 30px;
+        width: 200px;
+        height: 20px;
         border-radius: 10px;
         background-color: #D9D9D9;
         padding-left: 25px;
@@ -77,112 +87,70 @@ input {
 
 
 ul {
-    display: flex;
-    direction: row;
-    /* border:  red 2px solid; */
    justify-content: flex-end;
    padding-right: 0;
-   
-
 }
 
 li{
-    /* background-color: blueviolet; */
-    margin: 15px;
+    margin: 10px;
     list-style: none;
-
 }
-.clicar li {
-        width: 4px;
-        height:4px;
+.nav_icon {
+    width: 20px;
+    height:20px;
 }
 
 .clicar_home {
         width: 3;
         height: 4;
-
 }
 
 /* Parte do conteúdo */
 
 
 article{
-    display: flex;
-    flex-direction: row;
-   flex-wrap: wrap;
+   /* flex-wrap: wrap; */
    justify-content: space-between;
-   margin-left: 150px;
-   margin-right:  150px;
-    /* background-color: purple; */
+   margin-left: 100px;
+   margin-right:  100px;
     width: auto;
     height: auto
 }
-/* story e pots */
+
+/*------ story e poat ------ */
 
 .story_post{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-around; */
     width: 811px;
     height: auto;
     margin-top: 40px;
-   
 }
 
 .story {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     margin:0;
     border-radius: 10px;
-    width: 811px;
+    width: 700px;
     height: 134px;
     padding:0;
-
 }
 
-
-.imgens {
-    display: flex;
-    direction: row;
-   /* max-width: 811px;
-   max-height: 134px; */
-
-
-
-
+.org {
+    margin-left: 13px;
 }
-
-.paragrafro{
-    display: flex;
-    direction: row;
-    justify-content: space-around;
-    text-align: center;
-    margin: 0;
-    padding: 5px;
-
-
-
-
-   /* max-width: 811px;
-   max-height: 134px; */
-
-
-}
-
 .p_story {
     align-items: center;
-    margin: 10px 11px 0 10px;
-    width: 76px;
+    margin: 0;
+    width: 70px;
     text-align: center;
 }
 
 .img_story{
+    align-items: center;
     border-radius: 50%;
-    width: 76px;
-    height:76px;
-    margin: 10px 11px 0px 10px;
+    width: 55px;
+    height:55px;
+    margin: 5px 6px 0px 6px;
    background-color: white;
     padding: 1px;
     border: solid    2px #D9D9D9;
@@ -192,49 +160,33 @@ article{
     border: solid 3px rgb(0, 205, 3);
 }
 
-.clicar {
-    cursor: pointer; 
-}
-/*perfil e publicar*/
+
+/*------perfil e publicar-----------*/
 .post {
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;;
+    border-radius: 10px;
     margin-top: 30px;
-    width: 811px;
+    width: 700px;
     height:auto;
     padding: 0;
-
 }
+
 .linha_1 {
-    display: flex;
-    flex-direction:row;
-    /* border: red solid 2px; */
     justify-content: space-between;
     padding: 10px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
 }
 .info_post {
-    /* border: red solid 2px; */
-    display: flex;
-    flex-direction: row;
     align-items: center;
-
-
-
-
 }
+
 .info_more {
-    /* border: 1px red solid; */
-    display: flex;
-    flex-direction: row;
     align-items: center;
     margin: 30px;
 }
 
 .p_post {
     font-family: Montserrat, sans serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     font-style: normal;
     color: black;
@@ -243,7 +195,7 @@ article{
 
 .p_men {
     font-family: Montserrat, sans serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     font-style: normal;
     color: black;
@@ -252,29 +204,6 @@ article{
 .more {
     width: 20px;
     height: 4px;
-}
-
-
-.perfil_publicar{
-    display: flex;
-    flex-direction: column;
-    /* border: 1px red solid; */
-    width: 544px;
-    margin-top: 40px;
-   
-}
-
-.perfil {
-    width: 554px;
-    height: 210px;
-}
-
-.publicar {
-    display: flex;
-    flex-direction: column;
-    width: 554px;
-    height: 210px;
-    margin-top: 30px;
 }
 
 .linha_2 {
@@ -287,59 +216,47 @@ article{
     justify-content: space-between;
     align-items: center;
     padding: 0 10px 0 10px;
-
-    /* border: red 2px solid; */
 }
 
 .primario {
     display: flex;
     flex-direction: row;
-    /* border: red 2px solid; */
 }
 
 .secundario {
     display: flex;
     flex-direction: row;
-    /* border: red 2px solid; */
 }
 
 .icons_post {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     margin: 5px;
 }
 
 .icon_salvar {
-    width: 23px;
-    height: 25px;
+    width: 15px;
+    height: 17px;
 }
 
 
 .linha_4 {
-    display:flex;
-    flex-direction: column;
-    /* border: 2px solid red; */
     padding-left: 10px;
-
 }
+
 .men{
-    display:flex;
-    flex-direction: row;
     justify-content: flex-start;
-    /* border: 2px solid red; */
     margin: 2px;
 }
 
 .linha_5 {
-   /* display: flex;
-   flex-direction: column; */
    align-items: center;
    padding: 10px;
 
 }
 
 .comentario{
-    width:730px;
+    width:650px;
     height: 25px;
     margin: 2px;
     background-color: white;
@@ -361,45 +278,58 @@ article{
 .final {
    text-align: center;
     background-color: #D9D9D9;
-    width:250px;
-    height: 20px ;
+    width:200px;
+    height: 15px ;
     margin: 50px;
     align-self: center;
     color:black;
     padding-top: 12px;
     padding-bottom: 11px ;
     border-radius: 30px;;
-    /* border: red solid 3px; */
-
 }
 
-/* Perfil Publicar  */
+/* -------Perfil Publicar  -------*/
 
-.perfil, .publicar {
-    margin-top: 30px;
+.perfil {
+    width: 423px;
+    height: 210px;
+    margin: 0;
+}
+
+.publicar {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    width: 423px;
+    height: 210px;
+    margin-top: 30px;
+}
+
+.perfil_publicar{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 40px;
+    margin-left: 10px;
 }
 
 .perfil {
-    flex-direction: row;
     justify-content: space-around;
     height: 200px;
+    align-items: center;
 }
 
 .publicar {
     flex-direction: column;
-    height: 609px;  
+    height: 550px;  
     align-items: center;
    text-align: center;
 }
 .img_perfil {
-    background-image: url(./assets/IMG/Story/Felicoty_perfil.png);
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
    margin: 10px;
-   text-align: center;
+ 
 }
 .item_info {
     display: flex;
@@ -411,19 +341,14 @@ article{
     color: #8E8E8E;
 }
 
-.column { 
-    display: flex;
-    flex-direction: column;
-}
-
  .mudar {
-    width: 121px;
-    height: 25px;
+    width: 100px;
+    height: 23px;
     color: white;
     background-color: #50B6F7;
     font-weight: 400;
     font-family: Montserrat, sans serif;
-    font-size:14px;
+    font-size:12px;
     font-style: normal;
     border-radius: 5px;
     border: none;
@@ -432,12 +357,6 @@ article{
     box-shadow:  0 0 0 2px rgba(0, 0, 0, 0.10) ;
 }
 
-.row {
-        display:flex;
-        flex-direction: row;
-       
-        
-}
 .header_publi{
     width: 100%;
     height: 71px;
@@ -448,7 +367,6 @@ article{
 }
 
 .icon_publi {
-    background-image: url(./assets/IMG/icons/icon_publi.png);
     width: 22px;
     height:22px;
     margin: 10px;
@@ -476,6 +394,7 @@ article{
     height: 70%;
     width: 100%;
     align-items: center;
+    margin: auto;
 }
 
 .photo_video {
@@ -499,23 +418,23 @@ article{
 }
 
 .hashtag {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     color: #8E8E8E;
-    margin: 10px 0 0 0;
-    font-size: 16px;
+    margin: 20px 0 0 0;
+    font-size: 12px;
     font-weight: 400;
     width: 100%;
 }
+
 h1 {
     font-family: Montserrat, sans serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600px;
     color: #898989;
     margin-bottom: 10px;
 }
-.item_hasthag {
-    margin: 10px;
+
+.item_hashtag {
+    margin: 5px;
     cursor: pointer;
 }
